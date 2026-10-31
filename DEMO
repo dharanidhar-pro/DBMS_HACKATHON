@@ -1,0 +1,6 @@
+
+- CUSTOMER: `customer@parkly.demo` — password: `customer123`
+- OPERATOR: `operator@parkly.demo` — password: `operator123`
+- ADMIN: `admin@parkly.demo` — password: `admin123`
+
+http://127.0.0.1:5173/login/admin
