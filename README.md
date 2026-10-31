@@ -1,8 +1,6 @@
-# TASK: CREATE THE COMPLETE PROFESSIONAL README FOR PARKLY
+PARKLY — Intelligent Parking Slot Allocation
 
-Act as a senior technical writer, software architect, database engineer, and open-source documentation specialist.
 
-Create a comprehensive, polished, professional `README.md` for my existing project:
 
 **PARKLY — Intelligent Parking Slot Allocation**
 
