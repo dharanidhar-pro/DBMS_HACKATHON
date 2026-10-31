@@ -1,0 +1,5 @@
+# Consistency and optional integrations
+
+PostgreSQL owns accounts, inventory, sessions, bookings, notifications, and audit records. Each successful reservation commits atomically; the API does not retry POST mutations automatically. If a network interruption leaves the result uncertain, inspect reservation history before submitting again. Facility polling may lag by 30 seconds, but confirmation always rechecks inside a transaction.
+
+This application does not configure MongoDB, Redis, message brokers, vector storage, or RAG. They are not necessary for rule-based parking eligibility. Future natural-language discovery could combine structured city/features filters with embeddings of verified facility descriptions. HNSW or IVF approximate-nearest-neighbour indexes and hybrid search could aid discovery, but must never override live inventory, ownership, compatibility, or interval checks. A RAG answer would need current authoritative facility records and explicit freshness limits. No such integration is advertised or active.
